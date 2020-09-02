@@ -27,7 +27,6 @@ def build_haffman_tree(freq):
         li = bisect.bisect_left(freqs, f1 + f2)
         bisect.insort_left(freqs, f1 + f2)
         nodes.insert(li, new_node)
-        freq_sorted.insert(li, (None, f1 + f2))
     return nodes[-1]
 
 
